@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Park Tudor</title>
+    <link rel="stylesheet" type="text/css" href="cssForMainPage.css" S />
+    <link rel="stylesheet" type="text/css" href="dropDownCSS.css" S />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="functionsForMainPage.js"></script>
+</head>
+<body>
+    <header id="ParkTudorHeader" class="ParkTudorHeader">
+        <a class="link " href="https://www.parktudor.org" title="Park Tudor"><b>Park Tudor Alumni Association</b></a>
+        <form action="/action_page.php">
+            <input id ="mainInput"type="text" placeholder="Search.." name="search">
+            <button id="search" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </header>
+    <div class="navbar">
+        <div class="dropdown">
+            <p>
+                Filter By:
+            </p>
+        </div>
+        <div class="dropdown" onclick="schoolDropDown()">
+            <button class="dropbtn">
+                School
+                <i id="schoolToggle"class="fa fa-plus"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Indiana University</a>
+                <a href="#">Purdue University</a>
+                <a href="#">Notre Dame</a>
+            </div>
+        </div>
+        <div class="dropdown" onclick="majorDropDown()">
+            <button class="dropbtn">
+                Major
+                <i id="majorToggle" class="fa fa-plus"></i>
+            </button>
+            <div id="myDropdownA" class="dropdown-content-a">
+                <a href="#">Political Science</a>
+                <a href="#">Economics</a>
+                <a href="#">Computer Science</a>
+            </div>
+        </div>
+        <div class="dropdown" onclick="stateDropDown()">
+            <button class="dropbtn">
+                State
+                <i id="stateToggle" class="fa fa-plus"></i>
+            </button>
+            <div id="myDropdownB" class="dropdown-content-b">
+                <a href="#">Indiana</a>
+                <a href="#">New York</a>
+                <a href="#">Illinois</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
