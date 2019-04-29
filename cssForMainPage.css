@@ -1,46 +1,57 @@
 ﻿body {
-    width: 98%;
-    height: 100%;
-    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    margin-right: 1vw;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url(all1.jpg);
+    position: relative;
+}
+.layer {
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    top:inherit;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .link {
     display: block;
     text-align: center;
-    margin-top: 1.5%;
     font-size: 445%;
     font-family: Arial, Helvetica, sans-serif;
-    color: #a10000;
+    color: #f1f1f1;
     text-decoration: none;
     filter: none;
 }
 
 header {
-    display: block;
     text-align: center;
-    width: 101%;
-    height: 12%;
-    background-image: url(https://dreamsky10.com/wp-content/uploads/2016/08/grey-brick-wallpaper-HD7.jpg);
+    width: 100vw;
+    height: 15%;
+    background: url(WhiteBrickWallPaper.gif);
     padding: 10px;
-    filter: grayscale(10%);
+}
+p{
+    font-size: 2.5vw;
+    display: block;
+   
+}
+hr{
+    float: left;
+    width: 22%;
+}
+.verticalLineNews {
+    margin-top: 1vh;
+    border-left: 2px solid #cfcaca;
+    height: 60vh;
+    display: inline-block;
+    box-shadow: 2px 0px 2px #888;
 }
 
-#mainInput {
-    overflow: hidden;
-    text-align: left;
-    width: 10%;
-    height: 15%;
-    margin-top: 3%;
-    margin-left: 85%;
-    border: none;
-    border-radius: 4%;
-    font-size: 100%;
-    font-family: "monospace",monospace;
-}
-#search {
-    text-align: left;
-    border: none;
-    border-radius: 4%;
-    font-size: 100%;
-    font-family: "monospace",monospace;
+.parkTudorNewsPicture{
+    width: 7%;
+    height: 7%;
 }

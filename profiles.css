@@ -1,0 +1,38 @@
+﻿.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 18vw;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: arial;
+    margin-top: 6vh;
+    margin-left: 11vw;
+    display: inline-block;
+    overflow-y: hidden;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.contact {
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: darkred;
+    text-align: center;
+    cursor: pointer;
+    width: 17vw;
+    font-size: 2vh;
+    display: inline-block;
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+    button:hover, a:hover {
+        opacity: 0.7;
+    }

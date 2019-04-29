@@ -1,17 +1,9 @@
 ﻿.navbar {
     overflow: hidden;
-    background-color: darkred;
+    background: darkred;
     width: 115%;
 }
 
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
 .dropdown {
     float: left;
@@ -22,7 +14,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: #f1f1f1;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -34,25 +26,27 @@
     background-color: #810707;
 }
 
-.dropdown-content, .dropdown-content-a, .dropdown-content-b  {
+.dropdown-content, .dropdown-content-a, .dropdown-content-b, .dropdown-content-c  {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 60px;
+    margin-top: 1vh;
+    margin-left: .25vw;
+    max-width: 15%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a {
+.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a, .dropdown-content-b a, .dropdown-content-c a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
 }
 
-.dropdown-content a:hover, .dropdown-content-a a:hover, .dropdown-content-b a:hover {
+.dropdown-content a:hover, .dropdown-content-a a:hover, .dropdown-content-b a:hover, .dropdown-content-c a:hover {
     background-color: #ddd;
 }
-.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a {
+.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a, .dropdown-content-c a {
     display: block;
 }
 
@@ -61,9 +55,22 @@
     font-size: 16px;
     color: #f1f1f1;
 }
+.search {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 0.4%;
+    margin-right: 14%;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+#searchSubmit{
+    margin: 0;
+    border-radius: 15%;
+}
+.navbar .search button:hover{
+    color: #ff0000;
+}
 .show{
     display: block;
-}
-.hide{
-    display: none;
 }
