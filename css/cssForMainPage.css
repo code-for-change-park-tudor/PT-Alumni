@@ -1,0 +1,57 @@
+﻿body {
+    top: 0;
+    left: 0;
+    margin-right: 1vw;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url(all1.jpg);
+    position: relative;
+}
+.layer {
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    top:inherit;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    font-size: 445%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    text-decoration: none;
+    filter: none;
+}
+
+header {
+    text-align: center;
+    width: 100vw;
+    height: 15%;
+    background: url(WhiteBrickWallPaper.gif);
+    padding: 10px;
+}
+p{
+    font-size: 2.5vw;
+    display: block;
+   
+}
+hr{
+    float: left;
+    width: 22%;
+}
+.verticalLineNews {
+    margin-top: 1vh;
+    border-left: 2px solid #cfcaca;
+    height: 60vh;
+    display: inline-block;
+    box-shadow: 2px 0px 2px #888;
+}
+
+.parkTudorNewsPicture{
+    width: 7%;
+    height: 7%;
+}

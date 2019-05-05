@@ -1,0 +1,76 @@
+﻿.navbar {
+    overflow: hidden;
+    background: darkred;
+    width: 115%;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f1f1f1;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn:focus {
+    background-color: #810707;
+}
+
+.dropdown-content, .dropdown-content-a, .dropdown-content-b, .dropdown-content-c  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-top: 1vh;
+    margin-left: .25vw;
+    max-width: 15%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a, .dropdown-content-b a, .dropdown-content-c a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropdown-content a:hover, .dropdown-content-a a:hover, .dropdown-content-b a:hover, .dropdown-content-c a:hover {
+    background-color: #ddd;
+}
+.dropdown-content a, .dropdown-content-a a, .dropdown-content-b a, .dropdown-content-c a {
+    display: block;
+}
+
+.dropdown p{
+    padding: 0px 16px;
+    font-size: 16px;
+    color: #f1f1f1;
+}
+.search {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 0.4%;
+    margin-right: 14%;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+#searchSubmit{
+    margin: 0;
+    border-radius: 15%;
+}
+.navbar .search button:hover{
+    color: #ff0000;
+}
+.show{
+    display: block;
+}
