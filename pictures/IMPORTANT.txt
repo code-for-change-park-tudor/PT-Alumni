@@ -1,0 +1,1 @@
+when referencing photos you need to use the picutres/"filename.png" instead of just "filename.png"
