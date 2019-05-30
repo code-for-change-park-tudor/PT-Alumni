@@ -1,4 +1,19 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    include_once 'dbh.inc.php';
+    $sql = "SELECT user_id, user_first, user_last FROM users";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["user_id"]. " - Name: " . $row["user_first"]. " " . $row["user_last"]. "<br>";
+    }
+    } else {
+    echo "0 results";
+    }
+
+?> 
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,6 +25,20 @@
     <script src="functionsForMainPage.js"></script>
 </head>
 <body>
+<form action="signup.inc.php" method="POST">
+    <input type="text" name="first" placeholder="Firstname">
+    <br>
+    <input type="text" name="last" placeholder="Lastname">
+    <br>
+    <input type="text" name="email" placeholder="E-mail">
+    <br>
+    <input type="text" name="uid" placeholder="Username">
+    <br>
+    <input type="text" name="pwd" placeholder="Password">
+    <br>
+    <button> type = "submit" name="submit">Sign up</button>
+</form>
+
     <div class="layer">
         <header id="ParkTudorHeader" class="ParkTudorHeader">
             <a class="link " href="https://www.parktudor.org" title="Park Tudor"><img src="imgs/logopt.svg" style="width:30vw; height:10vh; margin-top:1vh" /></a>
@@ -82,7 +111,6 @@
                 <a href="#"><i class="fa fa-facebook"></i></a>
             </div>
             <p style="color:darkred"><button class="contact">Contact</button></p>
-
         </div>
         <div class="card">
             <img src="imgs/default-user.png" alt="John" style="width:8vw; margin-top: 1vh">
@@ -112,5 +140,4 @@
         </div>
     </div>
 </body>
-</html>
 </html>

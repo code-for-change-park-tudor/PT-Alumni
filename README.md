@@ -9,4 +9,6 @@ Brian Zhu
 Kyle Xu
 Margherita Firenze
 Olivia Xu
+Sahvan Patel
+Trevor Sullivan
 ```
